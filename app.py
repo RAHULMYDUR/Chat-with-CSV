@@ -184,6 +184,8 @@ def main():
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
+        # Add an initial message
+        st.session_state.messages.append({"role": "assistant", "content": "Please upload the CSV file to start analyzing your data."})
 
     if prompt := st.chat_input("Ask your question about the data..."):
         if not uploaded_file:
@@ -205,10 +207,10 @@ def main():
             else:
                 st.session_state.messages.append({"role": "assistant", "content": "Error processing the file."})
 
-    with st.chat_message("assistant"):
-        for message in st.session_state.messages:
+    # Display chat history
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
 if __name__ == '__main__':
     main()
-
