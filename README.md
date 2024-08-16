@@ -9,9 +9,6 @@ DataScribe is an interactive Streamlit application that allows you to chat with 
 - **Code Execution**: Executes the generated code and returns results in a user-friendly format.
 - **Refined Responses**: Get clear, concise, and formatted responses based on the raw output.
 
-## Flow Chart
-![image](https://github.com/user-attachments/assets/9a68b430-3ba0-4fbc-ae4d-66435d1fc0aa)
-
 
 ## Installation
 
@@ -95,6 +92,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Streamlit](https://streamlit.io/)
 - [Pandas](https://pandas.pydata.org/)
 - [Google Generative AI](https://cloud.google.com/generative-ai)
-```
-
-This version has proper formatting for sections, code blocks, and lists.
+  
+## Flow Chart
+![image](https://github.com/user-attachments/assets/9a68b430-3ba0-4fbc-ae4d-66435d1fc0aa)
